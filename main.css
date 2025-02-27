@@ -44,7 +44,8 @@ body {
 }
 
 .logo strong {
-    color: black;
+    color:#1D267E;
+    font-weight: normal;
 }
 
 /* Navigation Links */
