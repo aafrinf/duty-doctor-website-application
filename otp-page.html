@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>enter the 6 digit code to verify</title>
+</head>
+<link rel="stylesheet" href="index1.css">
+<body>
+    <div class="container">
+        <div class="otp-box">
+            <h3>6 - digit code</h3>
+            <p class="sub-text">Please enter the code we've sent to your<br> email dummyemail@gmail.com</p>
+        
+            <input type="text" id="digit1" maxlength="1" onkeyup="moveToNext(this, 'digit2')">
+            <input type="text" id="digit2" maxlength="1" onkeyup="moveToNext(this, 'digit3')">
+            <input type="text" id="digit3" maxlength="1" onkeyup="moveToNext(this, 'digit4')">
+            <input type="text" id="digit4" maxlength="1" onkeyup="moveToNext(this, 'digit5')">
+            <input type="text" id="digit5" maxlength="1" onkeyup="moveToNext(this, 'digit6')">
+            <input type="text" id="digit6" maxlength="1">
+
+            <p class="resend">Resend code 00:20</p>
+    <button onclick="validateOTP()">Continue</button> 
+
+        </div>
+    </div>
+
+    <script>
+        function moveToNext(current, nextFieldID) {
+            if (current.value.length === 1 && nextFieldID) {
+                document.getElementById(nextFieldID).focus();
+            }
+        }
+
+        function validateOTP() {
+            const correctOTP = "200880"; // The actual OTP to validate
+            let enteredOTP = "";
+
+            for (let i = 1; i <= 6; i++) {
+                enteredOTP += document.getElementById("digit" + i).value;
+            }
+
+            if (enteredOTP === correctOTP) {
+                alert("OTP Verified Successfully!");
+                window.location.href = "register.html"; // Redirect to the next page
+            } else {
+                alert("Invalid OTP! Please try again.");
+            }
+        }
+    </script>
+</body>
+</html>

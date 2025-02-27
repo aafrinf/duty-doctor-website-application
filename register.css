@@ -1,0 +1,215 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    position: relative;
+    background-image: url("img 1/image.png");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.container {
+    position: absolute; /* Absolute position inside body */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border-radius: 24px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 485px;
+    height: 649px;
+}
+.register-box{
+    position: absolute;
+    text-align: center;
+    left: 75px;
+    top: 70px;
+    font-family:"poppins" ,sans-serif;
+
+
+}
+.form-group {
+    position: relative;
+    top: 160px;
+    left: 40px;
+    margin-bottom: 50px;
+}
+
+input {
+    width: 363px;
+    height: 61px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 34px;
+    outline: none;
+    background: transparent;
+    border: 2px solid #1D1D67;
+}
+label {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color:#1D1D67;
+    transition: 0.3s;
+    pointer-events: none;
+    background: white;
+    padding: 0 5px;
+}
+
+input:focus, input:valid {
+    border-color :#1D1D67;
+}
+
+input:focus + label, input:valid + label {
+    top: 0;
+    font-size: 12px;
+    color:#1D1D67;
+}
+
+button {
+    width: 363px;
+    height: 61px;
+    padding: 12px;
+    background-color: #1d1d67d3;
+    color: white;
+    border: none;
+    border-radius: 34px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 600;
+    margin-top: 160px;
+    margin-left: 40px;
+}
+button:hover {
+    background-color: #00054ddd;
+}
+.account{
+    margin-top: 20px;
+    margin-left: 90px;
+}
+.account a {
+    color: #002366;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: left;
+}
+.error {
+    color: red;
+    font-size: 12px;
+    height: 16px;
+
+}
+
+/* media querry for background img */
+@media (max-width: 768px){
+    /* tablets or small screens */
+    body{
+        background-size: contain;
+        background-position: center;
+    }
+}
+@media (max-width: 480px){
+    /* website screens */
+    body{
+        background-size: cover;
+        background-position: top;
+    }
+}
+/* bg img height */
+@media (max-height: 768px){
+    /* tablets or small screens */
+    body{
+        background-size: contain;
+        background-position: center;
+        background-size: cover;
+    }
+}
+@media (max-height: 480px){
+    /* website screens */
+    body{
+        background-size: cover;
+        background-position: top;
+    }
+}
+/* for container */
+@media (max-width:768px){
+    /* tablets */
+    .container{
+        width: 80%;
+        height:auto;
+        max-width: 400px;
+    }
+    input{
+        width: 90%;
+        height: 90%;
+        max-width: 300px;
+    }
+    .register-box{
+        font-size: 14px;
+        position: absolute;
+        left: 45px;
+    }
+    .form-group{
+        position: relative;
+        top: 130px;
+    }
+    button{
+        width: 90%;
+        height: 90%;
+        max-width: 300px;
+        margin-top: 130px;
+    }
+    .account{
+        margin-left: 70px;
+
+    }
+
+}
+@media(max-width: 480px)
+ {
+    .container{
+        width:75%;
+        height: auto;
+        max-width: 350px;
+        padding: 20px;
+    }
+    input{
+        width: 85%;
+        height: 85%;
+        max-width: 250px;
+    }
+    .register-box{
+        font-size: 13px;
+        position: absolute;
+        left: 35px;
+    }
+    .form-group{
+        position: relative;
+        top: 110px;
+    }
+    button{
+        width: 80%;
+        height: 80%;
+        max-width: 250px;
+    }
+    .account{
+        margin-left: 65px;
+    }
+}
+
+ 
+    
+     

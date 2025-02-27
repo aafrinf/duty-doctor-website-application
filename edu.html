@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="edu.css">
+</head>
+<body>
+    <div class="container">
+        <div class="edu-box">
+            <h2> Enter your Educational <br>details</h2>
+            <form id="myForm">
+                <label for="degree">Degree</label>
+                <select id="degree" name="degree" >
+                    <option>Select</option>
+                    <option>MBBS</option>
+                    <option>MCA</option>
+                    <option>BSC</option>
+                    <option>BBA</option>
+
+                </select>
+
+                <label for="completion">Completion</label>
+                <select id="completion" name="completion">
+                    <option>Select</option>
+                    <option>Yes</option>
+                    <option>No</option>
+                    <option>Pursuing</option>
+
+                </select>
+
+                <label for="country">Country</label>
+                <select id="country" name="country">
+                    <option>Select</option>
+                    <option>India</option>
+                    <option>China</option>
+                    <option>Japan</option>
+                    <option>Australia</option>
+                    <option>uk</option>
+
+                </select>
+
+                <label for="institute">Institute name</label>
+                <input type="text" id="instituteName" name="institute" >
+            <small class="error" id="instituteNameError "></small>
+
+
+
+                <label for="reg-number">Medical Registration Number</label>
+                <input type="text" id="regNumber" name="reg-number"  >
+                <small class="error" id="regNumberError"></small>
+
+                <button onclick="location.href='main.html';" type="submit">Continue</button>
+            </form>
+        </div>
+    </div>
+    <script>
+         document.getElementById("myForm").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent form submission
+    let instituteName = document.getElementById("instituteName").value.trim();
+    let regNumber = document.getElementById("regNumber").value.trim();
+
+     // Get error elements
+     let instituteNameError  = document.getElementById("instituteNameError ");
+    let regNumberError  = document.getElementById(" regNumberError");
+
+     // Reset error messages
+     instituteNameError.textContent = "";
+     regNumberError.textContent = "";
+      
+     let isValid = true;
+
+    // First Name Validation
+    if (regNumber === "") {
+         regNumberError.textContent = " Register number is required.";
+        isValid = false;
+    } else if (!/^[A-Za-z0-9]+$/.test(regNumber)) {
+         regNumberError.textContent = " Register number can only contain letters.";
+        isValid = false;
+    }
+
+    // Last Name Validation
+    if (instituteName  === "") {
+        instituteNameError.textContent = " Institute  name is required.";
+        isValid = false;
+    } else if (!/^[A-Za-z]+$/.test(instituteName)) {
+        instituteNameError.textContent = " Institute can only contain letters.";
+        isValid = false;
+    }
+
+    if (isValid) {
+        alert("Form submitted successfully!");
+        window.location.href = "main.html"; // Change this to your next page URL
+    }
+});
+
+    </script>
+</body>
+</html>
+
+           
+     

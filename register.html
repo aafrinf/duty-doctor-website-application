@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <div class="container">
+        <div class="register-box">
+            <h2>Welcome Doctor.!</h2>
+            <h2>Register your details and start</h2>
+            </div>
+            <form id="myForm">
+            <div class="form-group">
+                <input type="text" id="firstName" required>
+                <label for="firstName">First Name</label>
+            <small class="error" id="firstNameError"></small>
+            </div>
+
+            <div class="form-group">
+                <input type="text" id="lastName" required>
+                <label for="lastName">Last Name</label>
+            <small class="error" id="lastNameError"></small>
+            </div>
+
+            <div class="form-group">
+                <input type="email" id="email" required>
+                <label for="email">Email ID</label>
+            <small class="error" id="emailError"></small>
+            </div>
+
+    <button type="submit">Continue</button> 
+    </form>
+    <p class="account">Do you have an account? <a href="#">Login</a></p>
+        </div>
+    <script>
+         document.getElementById("myForm").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent form submission
+
+    // Get input values
+    let firstName = document.getElementById("firstName").value.trim();
+    let lastName = document.getElementById("lastName").value.trim();
+    let email = document.getElementById("email").value.trim();
+
+    // Get error elements
+    let firstNameError = document.getElementById("firstNameError");
+    let lastNameError = document.getElementById("lastNameError");
+    let emailError = document.getElementById("emailError");
+
+    // Reset error messages
+    firstNameError.textContent = "";
+    lastNameError.textContent = "";
+    emailError.textContent = "";
+
+    let isValid = true;
+
+    // First Name Validation
+    if (firstName === "") {
+        firstNameError.textContent = "First name is required.";
+        isValid = false;
+    } else if (!/^[A-Za-z]+$/.test(firstName)) {
+        firstNameError.textContent = "First name can only contain letters.";
+        isValid = false;
+    }
+
+    // Last Name Validation
+    if (lastName === "") {
+        lastNameError.textContent = "Last name is required.";
+        isValid = false;
+    } else if (!/^[A-Za-z]+$/.test(lastName)) {
+        lastNameError.textContent = "Last name can only contain letters.";
+        isValid = false;
+    }
+
+    // Email Validation
+    let emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    if (email === "") {
+        emailError.textContent = "Email ID is required.";
+        isValid = false;
+    } else if (!emailPattern.test(email)) {
+        emailError.textContent = "Enter a valid email address.";
+        isValid = false;
+    }
+
+    // If form is valid, submit (for now, just log values)
+    if (isValid) {
+        alert("Form submitted successfully!");
+        window.location.href = "edu.html"; // Change this to your next page URL
+    }
+});
+        
+    </script>
+</body>
+</html>

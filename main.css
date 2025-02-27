@@ -1,0 +1,665 @@
+@import url('https://fonts.cdnfonts.com/css/lufga');
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    position: relative;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    width: 100vw;
+    height: 100vh;
+}
+
+/* Navbar Styling */
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1280px;
+    background-color:white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo Styling */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.logo span {
+    font-size: 20px;
+    font-weight: bold;
+    color: #2D2E83;
+}
+
+.logo strong {
+    color: black;
+}
+
+/* Navigation Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* Search Bar */
+.search-bar {
+    display: flex;
+    align-items: center;
+    background: #f1f1f1;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.search-bar input {
+    border: none;
+    background: none;
+    outline: none;
+    padding: 5px;
+}
+
+.search-bar i {
+    color: gray;
+    margin-right: 5px;
+}
+
+/* Icons */
+ .icons img{
+    width: 30px;
+    cursor: pointer;
+    padding: 10px;
+ }
+
+ /* profile card styling */
+ .profile-container {
+    position: relative;
+    width: 280px;
+    height: 624px;
+    top: 155px;
+    left: 50px;
+}
+
+.profile-card {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background:#FFFFFF;
+    padding: 20px;
+    border-radius: 25px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.profile-image {
+    position: relative;
+    display: inline-block;
+}
+
+.profile-image img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.progress {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background:#1D267E;
+    color: white;
+    font-size: 12px;
+    padding: 3px 7px;
+    border-radius: 10px;
+}
+
+h2 {
+    font-size: 20px;
+    margin: 10px 0 5px;
+}
+
+.verified {
+    color:  #1D267E;
+}
+
+.role, .location {
+    font-size: 14px;
+    color: gray;
+    margin: 2px 0;
+}
+
+.complete-profile {
+    background:  #1D267E;
+    color: white;
+    padding: 10px;
+    width: 157px;
+    height: 47px;
+    border: none;
+    border-radius: 34px;
+    cursor: pointer;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.profile-performance {
+    margin-top: -30px;
+    margin-bottom: 30px;
+    font-size: 18px;
+    background-color: #f1f1f1;
+    border-radius: 25px;
+
+
+}
+.para1{
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+    margin-left: 10px;
+}
+.para2{
+    text-align: left;
+    margin-left: 20px;
+    line-height: 1.5;
+    color: grey;
+}
+.para3{
+    text-align: right;
+    margin-right: 20px;
+    line-height: 1.5;
+    margin-top: -80px;
+    color: grey;
+}
+
+.menu {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+    padding: 5px 0;
+    display: block;
+    text-align: left;
+}
+.menu img{
+    padding: 0 10px 10px ;
+    margin: 0%;
+    margin-bottom: -20px;
+}
+.menu button{
+    background-color: #F6F6FA;
+    border-radius: 20px;
+    width: 240px;
+    height: 40px;
+    border: none;
+    margin-bottom: 10px;
+}
+.home-img{
+
+}
+/* banner styling */
+.banner-container{
+    position: absolute;
+    width: 576px;
+    height: 286px;
+    top: 155px;
+    left: 394px;
+    background: linear-gradient(to right,rgb(102,110,185),rgb(222,224,245));
+}
+.banner h1{
+    position: absolute;
+    top: 30px;
+    padding-left: 30px;
+    font-family: "lufga",sans-serif;
+    font-weight: 700;
+    background: linear-gradient(to right,#EEFF00, #FFD739);
+    
+    /* Clip the background to the text */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    /* Ensure it works on different browsers */
+    background-clip: text;
+    text-fill-color: transparent;
+}
+.banner p{
+    position: absolute;
+    top: 120px;
+    padding-left: 30px;
+    color: #FFFFFF;
+    font-family: "lufga",sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 23.49px;
+}
+.girl{
+    position: absolute;
+    top: 10px;
+    left: 340px;
+}
+.shake{
+     position: absolute;
+     top: 40px;
+     left: 280px;
+}
+.jobs{
+    position: absolute;
+    top:200px;
+    left: 30px;
+    width: 157px;
+    height: 47px;
+    border-radius: 34px;
+    background-color: #F6F6FA;
+    color: #1D267E;
+    border: none;
+    cursor: pointer;
+}
+.jobs:hover {
+     border:2px solid #1D267E;
+}
+.register{
+    position: absolute;
+    top:200px;
+    left: 200px;
+    width: 157px;
+    height: 47px;
+    border-radius: 34px;
+    background-color :#1D267E;
+    color :#F6F6FA;
+    border: none;
+    cursor: pointer;
+}
+.register:hover {
+    border:2px solid #F6F6FA;
+}
+.imd-jobs{
+    position: absolute;
+    top: 460px;
+    left: 394px;
+    width: 580px;
+    height: 240px;
+    border-radius: 25px;
+    border: 1px;
+    display: flex;
+    flex-direction: row; 
+    background-color:#f1f1f1;
+}
+h3{
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+.imd-jobs img{
+    width:550px;
+    height:180px;
+    padding-top: 40px;
+    padding-left: 30px;
+}
+h5{
+    color: #1D267E;
+    position: absolute;
+    left: 500px;
+    top: 10px;
+    cursor: pointer;
+    text-decoration: underline;
+    
+}
+ /* right banner starts */
+ .search-jobs img{
+    position: absolute;
+    top: 155px;
+    left: 1000px;
+    width: 280px;
+    height: 1037px;
+    
+ }
+ /* recommended job styling */
+ .sticky-container {
+    position: sticky;
+    left: 400px;
+    margin: 30px;
+    padding: 10px;
+    margin-top: 40px;
+    max-height: 300px; /* Adjust the height as needed */
+    width: 580px; /* Set a width */
+    height: 330px;
+    border: 1px solid #ddd;
+    overflow-y: auto; /* Enables vertical scrolling */
+}
+
+.job-list {
+    display: flex;
+    margin-top: 60px;
+    flex-direction: row;
+    gap: 10px;
+    width: 580px;
+    height: 331px;
+    border-radius: 25px;
+    border: 1px;
+    background: #ffffff;
+    padding-top: 30px;
+}
+
+.job {
+    width: 363px;
+    height: 227px;
+    border-radius: 25px;
+    background-color: #ffffff;
+    border: 1px;
+    margin-left: 20px;
+    padding: 10px;
+    background: white;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+.job h4{
+    display: flex;
+    padding-left: 35px;
+
+}
+.kmch{
+    width: 30px;
+    display: flex;
+    padding-right: 10px;
+}
+.kovai {
+    font-size: small;
+    color :grey;
+    display: flex;
+    margin-top: -10px;;
+    margin-left: 80px;
+}
+.years{
+    display: flex;
+    color: gray;
+    font-size: smaller;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.district{
+    margin-top: 30px;
+}
+.call{
+position: absolute;
+top:250px;
+left: 70px;
+width: 130px;
+height: 40px;
+border-radius: 34px;
+background-color: #F6F6FA;
+color: #1D267E;
+border: #1D267E 2px solid;
+cursor: pointer;
+}
+.call:hover {
+border:2px solid #1D267E;
+}
+.apply{
+position: absolute;
+top:250px;
+left: 220px;
+width: 130px;
+height: 40px;
+border-radius: 34px;
+background-color :#1D267E;
+color :#F6F6FA;
+border: none;
+cursor: pointer;
+}
+.apply:hover {
+border:2px solid #F6F6FA;
+}
+.sticky-container h5{
+text-align: right;
+color: #1D267E;
+margin-top: -40px;
+position: sticky;
+top: 10px;
+left:-40px;
+}
+.but-img{
+width:300px;
+margin-top: 20px;
+cursor: pointer;
+}
+/* msg banner styling */
+.msg-banner img{
+    position: absolute;
+    top: 1120px;
+    left:400px;
+    border: 1px solid;
+    cursor: pointer;
+}
+
+/* duty starts */
+.duty-container {
+    position: sticky;
+    left: 400px;
+    margin: 30px;
+    padding: 10px;
+    margin-top: 380px;
+    max-height: 300px; /* Adjust the height as needed */
+    width: 580px; /* Set a width */
+    height: 200vh;
+    border: 1px solid #ddd;
+    overflow-y: auto; /* Enables vertical scrolling */
+}
+.call2{
+    position: absolute;
+    top:300px;
+    left: 70px;
+    width: 130px;
+    height: 40px;
+    border-radius: 34px;
+    background-color: #F6F6FA;
+    color: #1D267E;
+    border: #1D267E 2px solid;
+    cursor: pointer;
+    }
+    .call2:hover {
+    border:2px solid #1D267E;
+    }
+    .apply2{
+    position: absolute;
+    top:300px;
+    left: 220px;
+    width: 130px;
+    height: 40px;
+    border-radius: 34px;
+    background-color :#1D267E;
+    color :#F6F6FA;
+    border: none;
+    cursor: pointer;
+    }
+    .apply2:hover {
+    border:2px solid #F6F6FA;
+    }
+    .duty-container h3{
+        margin-left: 10px;
+        margin-top: 20px;
+    }
+    .duty-container h2{
+        display: inline-block;
+        color: black;
+        margin-top: 60px;
+        margin-left: 40px;
+        text-decoration: underline;
+        font-weight: lighter;
+    }
+    .job-list2 {
+        display: flex;
+        margin-top:10px;
+        flex-direction: row;
+        gap: 10px;
+        width: 580px;
+        height: 331px;
+        border-radius: 25px;
+        border: 1px;
+        background: #ffffff;
+    }
+    .bottom-banner img{
+        position: absolute;
+        top: 1850px;
+        height: 412px;
+        width: 1280px;
+    }
+
+    /* media queery  */
+    @media (max-width: 768px){
+        /* tablets or small screens */
+        body{
+             width: 90%;
+        }
+    }
+    @media (max-width: 480px){
+        /* website screens */
+        body{
+            width: 80%;
+        }
+    }
+
+    /* imd styling */
+    .imd-list{
+        display: flex;
+    margin-top: 60px;
+    flex-direction: row;
+    gap: 10px;
+    width: 580px;
+    height: 240px;
+    border-radius: 25px;
+    border: 1px;
+    background: #ffffff;
+
+    }
+    .all-jobs{
+        width: 130px;
+        height: 126px;
+        border-radius: 25px;
+        background-color: #ffffff;
+        border: 1px solid;
+        margin-left: 20px;
+        padding: 10px;
+        background: white;
+        border: 1px solid #ccc;
+        text-align: center;
+    }
+    .iconic{
+        display: flex;
+        width: -20px;
+        align-items: center;
+    }
+
+    /* imd jobs  */
+    .sticky-container1 {
+        position: sticky;
+        margin-top: -160px;
+        top: 350px; /* Adjust the top position */
+        left: 390px;
+        max-height: 240px; /* Adjust the height as needed */
+        width: 610px; /* Set a width */
+        height: 240px;
+        background:  white;
+        border: 1px solid #ddd;
+        padding: 10px;
+        border-radius: 25px;
+        overflow-y: auto; /* Enables vertical scrolling */
+    }
+    
+    .job-lists {
+        display:flex;
+        flex-direction: row;
+        gap: 10px;
+        width: 139px;
+        height: 126px;
+        border-radius: 25px;   
+    }
+
+    .job3 {
+    display:flex;
+        width: 139px;
+        height: 126px;
+        padding: 10px;
+        background: white;
+        border: 1px solid #ccc;
+        border-radius: 25px;
+        text-align: center;
+
+        margin-top: 50px;
+    }
+    .image-imd{
+        display: block;
+        width: 30px;
+        height: 20px;
+        margin-top: 20px;
+        padding-left: 50px;
+    }
+    .job3 p{
+        display: block;
+        margin-top: 60px;
+        font-size: smaller;
+        margin-left: -50px;
+        padding-right: 30px;
+
+    }
+    .sticky-container1 h4{
+        display: flex;
+        color: #1D267E;
+        margin-left: 470px;
+        margin-top: -20px;
+        padding-bottom: 30px;
+        position: sticky;
+        top:20px ;
+        left: 200px;
+
+    }
+    .grey{
+        color: grey;
+    }
+    .sticky-container1 h3{
+        margin-top: 20px;
+        font-weight:bold;
+    }
+    .sticky-container1 hr{
+        width: 540px;
+        height: 0.555px;
+        position: sticky;
+        top: 60px;
+        color: #D9D9D9;
+
+    }
+    .sticky-container h3{
+        padding-top: 10px;
+        margin-bottom: 30px;
+    }
+    .duty-container h5{
+        margin-top: 20px;
+    }
