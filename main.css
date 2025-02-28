@@ -349,7 +349,7 @@ h5{
     left: 400px;
     margin: 30px;
     padding: 10px;
-    margin-top: 40px;
+    margin-top: 30px;
     max-height: 300px; /* Adjust the height as needed */
     width: 580px; /* Set a width */
     height: 330px;
@@ -359,15 +359,15 @@ h5{
 
 .job-list {
     display: flex;
-    margin-top: 60px;
+    margin-top: 70px;
     flex-direction: row;
     gap: 10px;
     width: 580px;
-    height: 331px;
+    height: 227px;
     border-radius: 25px;
     border: 1px;
     background: #ffffff;
-    padding-top: 30px;
+    padding-top: 5px;
 }
 
 .job {
@@ -388,7 +388,7 @@ h5{
 
 }
 .kmch{
-    width: 30px;
+    width: 35px;
     display: flex;
     padding-right: 10px;
 }
@@ -411,9 +411,9 @@ h5{
 }
 .call{
 position: absolute;
-top:250px;
+top:230px;
 left: 70px;
-width: 130px;
+width: 140px;
 height: 40px;
 border-radius: 34px;
 background-color: #F6F6FA;
@@ -426,9 +426,9 @@ border:2px solid #1D267E;
 }
 .apply{
 position: absolute;
-top:250px;
+top:230px;
 left: 220px;
-width: 130px;
+width: 140px;
 height: 40px;
 border-radius: 34px;
 background-color :#1D267E;
@@ -465,68 +465,96 @@ cursor: pointer;
 .duty-container {
     position: sticky;
     left: 400px;
-    margin: 30px;
-    padding: 10px;
+    margin: 10px;
     margin-top: 380px;
     max-height: 300px; /* Adjust the height as needed */
     width: 580px; /* Set a width */
-    height: 200vh;
+    height: 331px;
     border: 1px solid #ddd;
     overflow-y: auto; /* Enables vertical scrolling */
 }
-.call2{
-    position: absolute;
-    top:300px;
-    left: 70px;
-    width: 130px;
-    height: 40px;
-    border-radius: 34px;
-    background-color: #F6F6FA;
-    color: #1D267E;
-    border: #1D267E 2px solid;
-    cursor: pointer;
+
+    .h-duty{
+        margin-left: 30px;
+        margin-top: 10px;
     }
-    .call2:hover {
-    border:2px solid #1D267E;
+    
+    .duty-container h5{
+        position: sticky;
+        top: 10px;
+        margin-left: 500px;
     }
-    .apply2{
-    position: absolute;
-    top:300px;
-    left: 220px;
-    width: 130px;
-    height: 40px;
-    border-radius: 34px;
-    background-color :#1D267E;
-    color :#F6F6FA;
-    border: none;
-    cursor: pointer;
-    }
-    .apply2:hover {
-    border:2px solid #F6F6FA;
-    }
-    .duty-container h3{
-        margin-left: 10px;
-        margin-top: 20px;
-    }
-    .duty-container h2{
-        display: inline-block;
+    .app{
         color: black;
-        margin-top: 60px;
-        margin-left: 40px;
+        margin-top: 30px;
+        font-size: small;
+        margin-left: 20px;
         text-decoration: underline;
-        font-weight: lighter;
+    }
+    .wait{
+        color: black;
+        margin-top: 30px;
+        font-size: small;
+        margin-left: 120px;
+    }
+    .rej{
+        color: black;
+        margin-top: 30px;
+        font-size: small;
+        margin-left: 220px;
     }
     .job-list2 {
         display: flex;
-        margin-top:10px;
+        margin-top:50px;
+        padding-bottom: -20px;
         flex-direction: row;
         gap: 10px;
-        width: 580px;
-        height: 331px;
+        width: 363px;
+        height: 200px;
         border-radius: 25px;
         border: 1px;
         background: #ffffff;
     }
+    .jobs2 {
+        width: 363px;
+        height: 200px;
+        border-radius: 25px;
+        background-color: #ffffff;
+        border: 1px;
+        margin-left: 20px;
+        background: white;
+        border: 1px solid #ccc;
+        text-align: center;
+    }
+    .kmch1{
+        width: 35px;
+        display: flex;
+        padding-left: 30px;
+        padding-top: 15px;
+    }
+    .jobs2 h4{
+        padding-left: 50px;
+        margin-top: -35px;
+    }
+    .one1{
+        color: grey;
+        font-size: x-small;
+        padding-top: 5px;
+    }
+    .districts{
+        padding-top: 15px;
+        padding-bottom: 10px;
+        width: 250px;
+    }
+    .two2{
+        color: grey;
+        font-size: x-small;
+    }
+
+
+
+
+
     .bottom-banner img{
         position: absolute;
         top: 1850px;
@@ -582,15 +610,13 @@ cursor: pointer;
     /* imd jobs  */
     .sticky-container1 {
         position: sticky;
-        margin-top: -160px;
-        top: 350px; /* Adjust the top position */
         left: 390px;
+        margin-top: -140px;
         max-height: 240px; /* Adjust the height as needed */
         width: 610px; /* Set a width */
         height: 240px;
         background:  white;
-        border: 1px solid #ddd;
-        padding: 10px;
+        border: 1px solid white;
         border-radius: 25px;
         overflow-y: auto; /* Enables vertical scrolling */
     }
@@ -634,13 +660,12 @@ cursor: pointer;
     .sticky-container1 h4{
         display: flex;
         color: #1D267E;
-        margin-left: 470px;
+        margin-left: 500px;
         margin-top: -20px;
         padding-bottom: 30px;
         position: sticky;
-        top:20px ;
-        left: 200px;
-
+        top:30px;
+        left: 500px;
     }
     .grey{
         color: grey;
