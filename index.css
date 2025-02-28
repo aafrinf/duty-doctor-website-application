@@ -52,7 +52,6 @@ h2 {
 form {
     margin-top: 20px;
 }
-
 label {
     display: block;
     margin-top:50px;
@@ -61,47 +60,35 @@ label {
     text-align: left;
     padding-left: 35px;
 }
-.email {
-    position: absolute;
-    top: 42%;
-    left: 35%;
-    transform: translateY(-50%);
-    font-size: 16px;
-    color :#1D267E;
-    padding: 0 5px;
-    pointer-events: none;
-    transition: 0.3s;
+
+
+.email-group {
+    position: relative;
+    top: 30px;
+    margin-bottom: 50px;
     
 }
-.checkmark {
-    color :#1D267E;
-    font-size: 18px;
-    font-weight: bold;
-
-}
-#email{
-    margin-top: 40px;
-}
-
 input {
-    width:363px;
+    width: 363px;
     height: 61px;
-    padding: 0 15px;
-    border: 2px solid  #1D267E ;
-    border-radius: 34px;
+    padding: 10px;
     font-size: 16px;
-    margin-bottom: 15px;
-    color:#1d1d67;
+    border: 2px solid #ccc;
+    border-radius: 34px;
+    outline: none;
     background: transparent;
+    border: 2px solid #1D1D67;
 }
-input:focus + .email, input:valid + .email {
-    top:37%;
-    background-color: #ffffff;
-    font-size: 12px;
+.email {
+    position: absolute;
+    top: -100%;
+    left: 60px;
+    font-size: 16px;
     color:#1D1D67;
+    pointer-events: none;
+    background: white;
+    padding: 0 5px;
 }
-
- 
 
 button {
     width: 363px;
@@ -178,11 +165,7 @@ button:hover {
         height: auto;
         max-width: 400px;
     }
-    .email{
-        position: absolute;
-        top: 44%;
-        left: 26%;
-    }
+     
     input{
         width: 90%;
     }
