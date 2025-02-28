@@ -35,7 +35,11 @@ body {
     text-align: center;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
 }
-
+.login-box img{
+    margin-top: 50px;
+    margin-bottom: 5px;
+    margin-left: -70px;
+}
 h2 {
     font-size: 22px;
     font-weight: 600;
@@ -52,16 +56,6 @@ h2 {
 form {
     margin-top: 20px;
 }
-label {
-    display: block;
-    margin-top:50px;
-    font-size: 24px;
-    margin-bottom: 5px;
-    text-align: left;
-    padding-left: 35px;
-}
-
-
 .email-group {
     position: relative;
     top: 30px;
@@ -114,10 +108,14 @@ button:hover {
     margin-top: 25px;
 }
 
-.terms a, .register a {
-    color :#1D267E;
-    text-decoration: none;
+.terms a {
+    color :black;
     font-weight: bold;
+    text-decoration: underline;
+}
+.register a{
+    color: #1D267E;
+    text-decoration: none;
 }
 
 .terms a:hover, .register a:hover {

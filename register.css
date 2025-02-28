@@ -35,8 +35,9 @@ body {
     left: 75px;
     top: 70px;
     font-family:"poppins" ,sans-serif;
-
-
+}
+.register-box img{
+    margin-top: 15px;
 }
 .form-group {
     position: relative;
