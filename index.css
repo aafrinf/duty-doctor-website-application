@@ -167,10 +167,7 @@ button:hover {
     input{
         width: 90%;
     }
-    .container input:focus~.email,
-.container input:valid~.email {
-    top: 39%;
-}
+
 label{
     padding-left: 25px;
     font-size: 22px;
@@ -183,30 +180,20 @@ button{
     font-size: 10px;
     margin-top: 22px;
 }
-
-
  }
  @media(max-width: 480px)
  {
     .login-box{
-        width:85%;
+        width:90%;
         height: auto;
         max-width: 350px;
         padding: 20px;
     }
      
-    .email{
-        position: absolute;
-        top: 44%;
-        left: 26%;
-    }
     input{
         width: 80%;
     }
-    .container input:focus~.email,
-.container input:valid~.email {
-    top: 38%;
-}
+
 label{
     padding-left: 23px;
     font-size: 21px;
