@@ -224,9 +224,7 @@ h2 {
     border: none;
     margin-bottom: 10px;
 }
-.home-img{
-
-}
+ 
 /* banner styling */
 .banner-container{
     position: absolute;
@@ -346,20 +344,20 @@ h5{
  /* recommended job styling */
  .sticky-container {
     position: sticky;
-    left: 400px;
+    left: 420px;
     margin: 30px;
-    padding: 10px;
     margin-top: 30px;
     max-height: 300px; /* Adjust the height as needed */
     width: 580px; /* Set a width */
     height: 330px;
-    border: 1px solid #ddd;
+    border-radius: 25px;
+    border:  solid #ddd;
     overflow-y: auto; /* Enables vertical scrolling */
 }
 
 .job-list {
     display: flex;
-    margin-top: 70px;
+    margin-top: 90px;
     flex-direction: row;
     gap: 10px;
     width: 580px;
@@ -377,7 +375,6 @@ h5{
     background-color: #ffffff;
     border: 1px;
     margin-left: 20px;
-    padding: 10px;
     background: white;
     border: 1px solid #ccc;
     text-align: center;
@@ -407,12 +404,12 @@ h5{
     margin-top: 10px;
 }
 .district{
-    margin-top: 30px;
+    margin-top: 10px;
 }
 .call{
 position: absolute;
-top:230px;
-left: 70px;
+top:210px;
+left: 50px;
 width: 140px;
 height: 40px;
 border-radius: 34px;
@@ -426,8 +423,8 @@ border:2px solid #1D267E;
 }
 .apply{
 position: absolute;
-top:230px;
-left: 220px;
+top: 210px;
+left: 200px;
 width: 140px;
 height: 40px;
 border-radius: 34px;
@@ -455,17 +452,19 @@ cursor: pointer;
 /* msg banner styling */
 .msg-banner img{
     position: absolute;
-    top: 1120px;
-    left:400px;
-    border: 1px solid;
+    top: 1090px;
+    left:410px;
+    border: 1px solid #ddd;
     cursor: pointer;
+    border-radius: 25px;
 }
 
 /* duty starts */
 .duty-container {
     position: sticky;
-    left: 400px;
-    margin: 10px;
+    left: 410px;
+    margin-right: 25px;
+    border-radius: 25px;
     margin-top: 380px;
     max-height: 300px; /* Adjust the height as needed */
     width: 580px; /* Set a width */
@@ -475,7 +474,7 @@ cursor: pointer;
 }
 
     .h-duty{
-        margin-left: 30px;
+        margin-left: 20px;
         margin-top: 10px;
     }
     
@@ -486,21 +485,24 @@ cursor: pointer;
     }
     .app{
         color: black;
-        margin-top: 30px;
+        margin-top: 50px;
         font-size: small;
         margin-left: 20px;
+        font-weight: lighter;
         text-decoration: underline;
     }
     .wait{
         color: black;
-        margin-top: 30px;
+        margin-top: 50px;
         font-size: small;
+        font-weight: lighter;
         margin-left: 120px;
     }
     .rej{
         color: black;
-        margin-top: 30px;
+        margin-top: 50px;
         font-size: small;
+        font-weight: lighter;
         margin-left: 220px;
     }
     .job-list2 {
@@ -577,46 +579,19 @@ cursor: pointer;
     }
 
     /* imd styling */
-    .imd-list{
-        display: flex;
-    margin-top: 60px;
-    flex-direction: row;
-    gap: 10px;
-    width: 580px;
-    height: 240px;
-    border-radius: 25px;
-    border: 1px;
-    background: #ffffff;
-
-    }
-    .all-jobs{
-        width: 130px;
-        height: 126px;
-        border-radius: 25px;
-        background-color: #ffffff;
-        border: 1px solid;
-        margin-left: 20px;
-        padding: 10px;
-        background: white;
-        border: 1px solid #ccc;
-        text-align: center;
-    }
-    .iconic{
-        display: flex;
-        width: -20px;
-        align-items: center;
-    }
+    
+    
 
     /* imd jobs  */
     .sticky-container1 {
         position: sticky;
-        left: 390px;
+        left: 410px;
         margin-top: -140px;
         max-height: 240px; /* Adjust the height as needed */
         width: 610px; /* Set a width */
         height: 240px;
         background:  white;
-        border: 1px solid white;
+        border: 1px solid #ddd;
         border-radius: 25px;
         overflow-y: auto; /* Enables vertical scrolling */
     }
@@ -628,6 +603,8 @@ cursor: pointer;
         width: 139px;
         height: 126px;
         border-radius: 25px;   
+        border: 1px solid white;
+
     }
 
     .job3 {
@@ -639,8 +616,8 @@ cursor: pointer;
         border: 1px solid #ccc;
         border-radius: 25px;
         text-align: center;
-
         margin-top: 50px;
+        margin-left: 10px;
     }
     .image-imd{
         display: block;
