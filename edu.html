@@ -11,25 +11,29 @@
         <div class="edu-box">
             <h2> Enter your Educational <br>Details</h2>
             <form id="myForm">
-                <img  class="lab1"  src="img 1/deg.png">
+                <div class="edu-group">
+                <label for="degree">degree</label>
                 <select id="degree" name="degree" >
                     <option>Select</option>
                     <option>MBBS</option>
                     <option>MCA</option>
                     <option>BSC</option>
                     <option>BBA</option>
-
                 </select>
-
+                <span class="down-arrow" >⌄</span>
+            </div>
+            
+            <div class="edu-group">
                 <label for="completion">Completion</label>
                 <select id="completion" name="completion">
                     <option>Select</option>
                     <option>Yes</option>
                     <option>No</option>
                     <option>Pursuing</option>
-
                 </select>
-
+                <span class="down-arrow" >⌄</span>
+                </div>
+                <div class="edu-group">
                 <label for="country">Country</label>
                 <select id="country" name="country">
                     <option>Select</option>
@@ -38,18 +42,20 @@
                     <option>Japan</option>
                     <option>Australia</option>
                     <option>uk</option>
-
                 </select>
-
+                <span class="down-arrow" >⌄</span>
+                </div>
+                <div class="edu-group">
                 <label for="institute">Institute name</label>
                 <input type="text" id="instituteName" name="institute" >
             <small class="error" id="instituteNameError "></small>
+            </div>
 
-
-
+            <div class="edu-group">
                 <label for="reg-number"><span class="med">Medical Registration Number</span></label>
                 <input type="text" id="regNumber" name="reg-number"  >
                 <small class="error" id="regNumberError"></small>
+                </div>
 
                 <button onclick="location.href='main.html';" type="submit">Continue</button>
             </form>

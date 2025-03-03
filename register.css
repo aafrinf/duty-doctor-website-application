@@ -54,31 +54,25 @@ input {
     border: 2px solid #ccc;
     border-radius: 34px;
     outline: none;
+    display: block;
     background: transparent;
     border: 2px solid #1D1D67;
 }
 label {
     position: absolute;
-    top: 50%;
-    left: 10px;
+    top: 0%;
+    left: 20px;
     transform: translateY(-50%);
     font-size: 16px;
     color:#1D1D67;
     transition: 0.3s;
     pointer-events: none;
-    background: white;
+    background:#F3F4F6;
     padding: 0 5px;
+    border-radius: 25px;
 }
 
-input:focus, input:valid {
-    border-color :#1D1D67;
-}
 
-input:focus + label, input:valid + label {
-    top: 0;
-    font-size: 12px;
-    color:#1D1D67;
-}
 
 button {
     width: 363px;

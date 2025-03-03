@@ -357,7 +357,7 @@ h5{
 
 .job-list {
     display: flex;
-    margin-top: 90px;
+    margin-top: 75px;
     flex-direction: row;
     gap: 10px;
     width: 580px;
@@ -366,11 +366,12 @@ h5{
     border: 1px;
     background: #ffffff;
     padding-top: 5px;
+    margin-bottom: 15px;
 }
 
 .job {
     width: 363px;
-    height: 227px;
+    height: 217px;
     border-radius: 25px;
     background-color: #ffffff;
     border: 1px;
@@ -378,14 +379,15 @@ h5{
     background: white;
     border: 1px solid #ccc;
     text-align: center;
+    padding-top: 10px;
 }
 .job h4{
     display: flex;
-    padding-left: 35px;
+    padding-left: 30px;
 
 }
 .kmch{
-    width: 35px;
+    width: 38px;
     display: flex;
     padding-right: 10px;
 }
@@ -393,7 +395,7 @@ h5{
     font-size: small;
     color :grey;
     display: flex;
-    margin-top: -10px;;
+    margin-top: -20px;;
     margin-left: 80px;
 }
 .years{
@@ -404,11 +406,14 @@ h5{
     margin-top: 10px;
 }
 .district{
-    margin-top: 10px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 10px;
 }
 .call{
 position: absolute;
-top:210px;
+top:240px;
 left: 50px;
 width: 140px;
 height: 40px;
@@ -423,7 +428,7 @@ border:2px solid #1D267E;
 }
 .apply{
 position: absolute;
-top: 210px;
+top: 240px;
 left: 200px;
 width: 140px;
 height: 40px;
@@ -441,7 +446,7 @@ text-align: right;
 color: #1D267E;
 margin-top: -40px;
 position: sticky;
-top: 10px;
+top: 20px;
 left:-40px;
 }
 .but-img{

@@ -41,33 +41,53 @@ h2 {
     margin-left: 30px;
     line-height: 33.93px;
 }
-.lab1{
-    margin-left: 50px;
-    margin-top: 10px;
-    display: flex;
-    
-}
-label {
-    display: block;
-    margin: 10px 0 0px;
-    font-weight:bold;
-    color: #1D267E;
-    margin-left: 40px;
-}
-.med {
-    color: white;
-    background-color:#1D267E;
+.edu-group {
+    position: relative;
+    margin-bottom: 20px;
 }
 input, select {
     width: 363px;
-    height: 50px;
+    height: 55px;
     padding: 8px;
-    margin-bottom: 15px;
+    margin-bottom: 40px;
     border: 1px solid #1D267E;
     color: #1D267E;
     border-radius: 34px;
     margin-left: 30px;
+    margin-top: 10px;
+    display: block;
+    background: transparent;
 }
+label {
+    position: absolute;
+    top: 0%;
+    left: 40px;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color:#1D1D67;
+    transition: 0.3s;
+    pointer-events: none;
+    background:#F3F4F6;
+    padding: 0 5px;
+    border-radius: 25px;
+}
+select{
+    appearance: none;
+}
+.med{
+    color: #ffffff;
+    background-color: #1D267E;
+    border-radius: 25px;
+}
+.down-arrow{
+    position: absolute;
+    top: 10px;
+    left: 350px;
+    font-size: x-large;
+    font-weight: normal;
+
+}
+
 button {
     width: 363px;
     height: 61px;
@@ -79,7 +99,6 @@ button {
     font-size: 16px;
     cursor: pointer;
     font-weight: 600;
-    margin-top: 20px;
     margin-left: 30px;
 }
 button:hover {
