@@ -413,23 +413,23 @@ h5{
 }
 .call{
 position: absolute;
-top:240px;
-left: 50px;
+top:220px;
+left: 60px;
 width: 140px;
 height: 40px;
 border-radius: 34px;
 background-color: #F6F6FA;
 color: #1D267E;
-border: #1D267E 2px solid;
+border: #1D267E 1px solid;
 cursor: pointer;
 }
 .call:hover {
-border:2px solid #1D267E;
+border:1px solid #1D267E;
 }
 .apply{
 position: absolute;
-top: 240px;
-left: 200px;
+top: 220px;
+left: 210px;
 width: 140px;
 height: 40px;
 border-radius: 34px;
@@ -438,9 +438,115 @@ color :#F6F6FA;
 border: none;
 cursor: pointer;
 }
-.apply:hover {
-border:2px solid #F6F6FA;
-}
+.call2{
+    position: absolute;
+    top:220px;
+    left: 450px;
+    width: 140px;
+    height: 40px;
+    border-radius: 34px;
+    background-color: #F6F6FA;
+    color: #1D267E;
+    border: #1D267E 1px solid;
+    cursor: pointer;
+    }
+    .call2:hover {
+    border:1px solid #1D267E;
+    }
+    .apply2{
+    position: absolute;
+    top: 220px;
+    left: 610px;
+    width: 140px;
+    height: 40px;
+    border-radius: 34px;
+    background-color :#1D267E;
+    color :#F6F6FA;
+    border: none;
+    cursor: pointer;
+    }
+    .call3{
+        position: absolute;
+        top:220px;
+        left: 850px;
+        width: 140px;
+        height: 40px;
+        border-radius: 34px;
+        background-color: #F6F6FA;
+        color: #1D267E;
+        border: #1D267E 1px solid;
+        cursor: pointer;
+        }
+        .call3:hover {
+        border:1px solid #1D267E;
+        }
+        .apply3{
+        position: absolute;
+        top: 220px;
+        left: 1000px;
+        width: 140px;
+        height: 40px;
+        border-radius: 34px;
+        background-color :#1D267E;
+        color :#F6F6FA;
+        border: none;
+        cursor: pointer;
+        }
+        .call4{
+            position: absolute;
+            top:220px;
+            left: 1250px;
+            width: 140px;
+            height: 40px;
+            border-radius: 34px;
+            background-color: #F6F6FA;
+            color: #1D267E;
+            border: #1D267E 1px solid;
+            cursor: pointer;
+            }
+            .call4:hover {
+            border:1px solid #1D267E;
+            }
+            .apply4{
+            position: absolute;
+            top: 220px;
+            left: 1400px;
+            width: 140px;
+            height: 40px;
+            border-radius: 34px;
+            background-color :#1D267E;
+            color :#F6F6FA;
+            border: none;
+            cursor: pointer;
+            }
+            .call5{
+                position: absolute;
+                top:220px;
+                left: 1650px;
+                width: 140px;
+                height: 40px;
+                border-radius: 34px;
+                background-color: #F6F6FA;
+                color: #1D267E;
+                border: #1D267E 1px solid;
+                cursor: pointer;
+                }
+                .call5:hover {
+                border:1px solid #1D267E;
+                }
+                .apply5{
+                position: absolute;
+                top: 220px;
+                left: 1800px;
+                width: 140px;
+                height: 40px;
+                border-radius: 34px;
+                background-color :#1D267E;
+                color :#F6F6FA;
+                border: none;
+                cursor: pointer;
+                }
+ 
 .sticky-container h5{
 text-align: right;
 color: #1D267E;
@@ -468,13 +574,13 @@ cursor: pointer;
 .duty-container {
     position: sticky;
     left: 410px;
-    margin-right: 25px;
+    margin: 30px;
     border-radius: 25px;
     margin-top: 380px;
     max-height: 300px; /* Adjust the height as needed */
     width: 580px; /* Set a width */
-    height: 331px;
-    border: 1px solid #ddd;
+    height: 320px;
+    border:  solid #ddd;
     overflow-y: auto; /* Enables vertical scrolling */
 }
 
@@ -485,12 +591,12 @@ cursor: pointer;
     
     .duty-container h5{
         position: sticky;
-        top: 10px;
+        top: 14px;
         margin-left: 500px;
     }
     .app{
         color: black;
-        margin-top: 50px;
+        margin-top: 40px;
         font-size: small;
         margin-left: 20px;
         font-weight: lighter;
@@ -498,33 +604,32 @@ cursor: pointer;
     }
     .wait{
         color: black;
-        margin-top: 50px;
+        margin-top: 40px;
         font-size: small;
         font-weight: lighter;
         margin-left: 120px;
     }
     .rej{
         color: black;
-        margin-top: 50px;
+        margin-top: 40px;
         font-size: small;
         font-weight: lighter;
         margin-left: 220px;
     }
     .job-list2 {
         display: flex;
-        margin-top:50px;
-        padding-bottom: -20px;
+        margin-top:45px;
         flex-direction: row;
         gap: 10px;
-        width: 363px;
-        height: 200px;
+        width: 580px;
+        height: 220px;
         border-radius: 25px;
         border: 1px;
         background: #ffffff;
     }
     .jobs2 {
         width: 363px;
-        height: 200px;
+        height: 203px;
         border-radius: 25px;
         background-color: #ffffff;
         border: 1px;
@@ -540,28 +645,165 @@ cursor: pointer;
         padding-top: 15px;
     }
     .jobs2 h4{
-        padding-left: 50px;
+        padding-left: 10px;
         margin-top: -35px;
     }
     .one1{
         color: grey;
         font-size: x-small;
         padding-top: 5px;
+        margin-left: -45px;
     }
     .districts{
         padding-top: 15px;
         padding-bottom: 10px;
-        width: 250px;
+        padding-left: 20px;
+        padding-right: 7px;
     }
     .two2{
         color: grey;
-        font-size: x-small;
+        font-size: small;
     }
+    .duty-call1{
+        position: absolute;
+        top:230px;
+        left: 50px;
+        width: 140px;
+        height: 40px;
+        border-radius: 34px;
+        background-color: #F6F6FA;
+        color: #1D267E;
+        border: #1D267E 1px solid;
+        cursor: pointer;
+        }
+        .duty-call1:hover {
+        border:1px solid #1D267E;
+        }
+        .duty-apply1{
+        position: absolute;
+        top: 230px;
+        left: 210px;
+        width: 140px;
+        height: 40px;
+        border-radius: 34px;
+        background-color :#1D267E;
+        color :#F6F6FA;
+        cursor: pointer;
+        }
+        .duty-call2{
+            position: absolute;
+            top:230px;
+            left: 450px;
+            width: 140px;
+            height: 40px;
+            border-radius: 34px;
+            background-color: #F6F6FA;
+            color: #1D267E;
+            border: #1D267E 1px solid;
+            cursor: pointer;
+            }
+            .duty-call2:hover {
+            border:1px solid #1D267E;
+            }
+            .duty-apply2{
+            position: absolute;
+            top: 230px;
+            left: 600px;
+            width: 140px;
+            height: 40px;
+            border-radius: 34px;
+            background-color :#1D267E;
+            color :#F6F6FA;
+            cursor: pointer;
+            }
+            .duty-call3{
+                position: absolute;
+                top:230px;
+                left: 840px;
+                width: 140px;
+                height: 40px;
+                border-radius: 34px;
+                background-color: #F6F6FA;
+                color: #1D267E;
+                border: #1D267E 1px solid;
+                cursor: pointer;
+                }
+                .duty-call3:hover {
+                border:1px solid #1D267E;
+                }
+                .duty-apply3{
+                position: absolute;
+                top: 230px;
+                left: 990px;
+                width: 140px;
+                height: 40px;
+                border-radius: 34px;
+                background-color :#1D267E;
+                color :#F6F6FA;
+                cursor: pointer;
+                }
+                .duty-call4{
+                    position: absolute;
+                    top:230px;
+                    left: 1230px;
+                    width: 140px;
+                    height: 40px;
+                    border-radius: 34px;
+                    background-color: #F6F6FA;
+                    color: #1D267E;
+                    border: #1D267E 1px solid;
+                    cursor: pointer;
+                    }
+                    .duty-call4:hover {
+                    border:1px solid #1D267E;
+                    }
+                    .duty-apply4{
+                    position: absolute;
+                    top: 230px;
+                    left: 1380px;
+                    width: 140px;
+                    height: 40px;
+                    border-radius: 34px;
+                    background-color :#1D267E;
+                    color :#F6F6FA;
+                    cursor: pointer;
+                    }
+                    .duty-call5{
+                        position: absolute;
+                        top:230px;
+                        left: 1630px;
+                        width: 140px;
+                        height: 40px;
+                        border-radius: 34px;
+                        background-color: #F6F6FA;
+                        color: #1D267E;
+                        border: #1D267E 1px solid;
+                        cursor: pointer;
+                        }
+                        .duty-call5:hover {
+                        border:1px solid #1D267E;
+                        }
+                        .duty-apply5{
+                        position: absolute;
+                        top: 230px;
+                        left: 1780px;
+                        width: 140px;
+                        height: 40px;
+                        border-radius: 34px;
+                        background-color :#1D267E;
+                        color :#F6F6FA;
+                        cursor: pointer;
+                        }
 
 
 
 
 
+
+
+
+
+/* bottom banner sttyling */
     .bottom-banner img{
         position: absolute;
         top: 1850px;
